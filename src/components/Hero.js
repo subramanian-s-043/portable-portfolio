@@ -6,9 +6,12 @@ import {
   Button,
   Stack,
   Icon,
+  HStack,
+  Center,
   useColorModeValue,
   createIcon,
 } from "@chakra-ui/react";
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import ProfileArray from "./ProfileArray";
 
 export default function Header({ color }) {
@@ -38,11 +41,11 @@ export default function Header({ color }) {
           as={Box}
           textAlign={"center"}
           spacing={{ base: 8, md: 14 }}
-          pb={{ base: 20, md: 36 }}
-          pt={{ base: 36, md: 52 }}
+          pb={{ base: 20, md: 30 }}
+          pt={{ base: 20, md: 52 }}
         >
           <Heading
-            fontWeight={600}
+            fontWeight={300}
             fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
             lineHeight={"110%"}
           >
@@ -84,14 +87,21 @@ export default function Header({ color }) {
             >
               Contact Me
             </Button>
+            {/* <Center>
+              <HStack pt={4} spacing={4}>
+                <FaLinkedin onClick={linkedin} size={75} />
+                <FaGithub onClick={linkedin} size={75} />
+                <FaEnvelope onClick={linkedin} size={75} />
+              </HStack>
+            </Center> */}
             <Box>
               <Icon
                 as={Arrow}
                 color={useColorModeValue("gray.800", "gray.300")}
                 w={71}
                 position={"absolute"}
-                right={-71}
-                top={"10px"}
+                right={-70}
+                top={"18px"}
               />
               <Text
                 fontSize={"lg"}

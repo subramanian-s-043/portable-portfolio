@@ -29,7 +29,7 @@ export default function Experience({ color }) {
   const experience = ExperienceArray();
   const options = TagsArray("ExperienceTags");
   const [selected, setSelected] = useState("");
-
+  // console.log(options);
   useEffect(() => {
     if (options.length > 0) {
       setSelected(options[0].value);
@@ -54,7 +54,7 @@ export default function Experience({ color }) {
               <Text color={`${color}.400`} fontWeight={800}>
                 02
               </Text>
-              <Text fontWeight={800}>Experience</Text>
+              <Text fontWeight={800}>Education</Text>
             </HStack>
             <Divider orientation="horizontal" />
           </Stack>
